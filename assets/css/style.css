@@ -1,0 +1,7 @@
+#q1, #q2, #q3, #q4, #q5 {
+    margin: 0 0 20px;
+}
+
+#trivia-box, #results-box {
+    display: none;
+}
