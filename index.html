@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Trivia Game!</title>
+  </head>
+  <body>
+    
+    
+    <div class="jumbotron">
+        <h1 class="display-3">Trivia Game!</h1>
+    </div>
+
+    <div class="container" id="start-box">
+      <h2>Press Start to begin the game!</h2>
+      <button class="btn btn-primary btn-lg" id="start-btn">Start!</button>
+    </div>
+    
+    <!-- Container for the trivia questions and timer -->
+    <div class="container" id="trivia-box">
+        <div id="timer">Remaining Seconds: <span id="time-left">30</span></div>
+        <div class="questions">
+          <div id="q1">
+            <p>Lightning never strikes in the same place twice.</p>
+            <div class="form-check">
+              <input class="form-check-input" name="q1" type="radio" id="q1-option1" value="true">
+              <label class="form-check-label" for="q1-option1">
+                True
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="q1" type="radio" id="q1-option2" value="false">
+              <label class="form-check-label" for="q1-option2">
+                False
+              </label>
+            </div>
+          <div id="q2">
+            <p>Adults have fewer bones than babies do.</p>
+            <div class="form-check">
+              <input class="form-check-input" name="q2" type="radio" id="q2-option1" value="true">
+              <label class="form-check-label" for="q2-option1">
+                True
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="q2" type="radio" id="q2-option2" value="false">
+              <label class="form-check-label" for="q2-option2">
+                False
+              </label>
+            </div>
+          <div id="q3">
+            <p>Your fingernails and hair keep growing after you die.</p>
+            <div class="form-check">
+              <input class="form-check-input" name="q3" type="radio" id="q3-option1" value="true">
+              <label class="form-check-label" for="q3-option1">
+                True
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="q3" type="radio" id="q3-option2" value="false">
+              <label class="form-check-label" for="q3-option2">
+                False
+              </label>
+            </div>
+          <div id="q4">
+            <p>If you cut an earthworm in half, both halves can regrow their body.</p>
+            <div class="form-check">
+              <input class="form-check-input" name="q4" type="radio" id="q4-option1" value="true">
+              <label class="form-check-label" for="q4-option1">
+                True
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="q4" type="radio" id="q4-option2" value="false">
+              <label class="form-check-label" for="q4-option2">
+                False
+              </label>
+            </div>
+          <div id="q5">
+            <p>Drinking alcohol kills brain cells.</p>
+            <div class="form-check">
+              <input class="form-check-input" name="q5" type="radio" id="q5-option1" value="true">
+              <label class="form-check-label" for="q5-option1">
+                True
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="q5" type="radio" id="q5-option2" value="false">
+              <label class="form-check-label" for="q5-option2">
+                False
+              </label>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Container that will show the number of questions answered correctly and incorrectly -->
+    <div class="container" id="results-box">
+        <div class="row">
+          <div class="col-8">
+            <div class="card">
+              <p>Correct Answers: <span id=num-correct>0</span></p>
+              <p>Incorrect Answers: <span id=num-incorrect>0</span></p>
+              <p>Unanswered: <span id=num-unanswered>0</span></p>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+  </body>
+</html>
