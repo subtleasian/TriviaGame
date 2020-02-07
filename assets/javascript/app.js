@@ -10,7 +10,7 @@ var numCorrect = 0;
 var numIncorrect = 0;
 var numUnanswered = 0;
 
-var timeRemaining = 10;
+var timeRemaining = 30;
 var intervalId;
 
 function checkAnswers() {
